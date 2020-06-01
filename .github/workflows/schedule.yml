@@ -6,6 +6,8 @@ jobs:
   update-gist:
     runs-on: ubuntu-latest
     steps:
+      - name: waka-box
+        uses: matchai/waka-box@v4.0.3
       - uses: actions/checkout@master
       - name: Update gist
         uses: matchai/waka-box@master
